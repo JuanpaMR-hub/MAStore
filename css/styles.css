@@ -1,27 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Iceland&family=Kenia&display=swap');
 
-body{
+*{
     font-family: 'Kenia', cursive;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 nav{
     background-color: #2C2A2A;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 5rem;
+    height: 12vh;
     
 }
 input{
-    width: 30rem;
+    width: 30vw;
 }
 .logo-container{
     text-align: center;
     background-color: #D9D9D9;
-    width: 9rem;
-    height: 2rem;
+    width: 10vw;
+    height: 5vh;
     border-radius: 1rem;
     margin-left: 1.5rem;
 
@@ -53,7 +52,7 @@ a >span{
 main{
     margin: 0;
     padding: 0;
-    height: 75vh;
+    height: 68vh;
 }
 
 footer{
@@ -63,7 +62,7 @@ footer{
     flex-direction: column;
 }
 .footer-top{
-    padding-top: 1.5rem;
+    padding-top: 2vh;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -77,7 +76,7 @@ footer{
     width: 25%;
     display: flex;
     justify-content: space-around;
-    margin-bottom: 1rem;
+    margin-bottom: 2vh;
 }
 .socials > a > i{
     color: white;
@@ -130,14 +129,18 @@ footer{
     justify-content: center;
 }
 
+.category-title > h1{
+    color: white;
+    font-size: 1.3rem;
+}
 .category-title > p{
     color: white;
 }
 
 .category-img-container{
-    height: 15rem;
-    width: 10rem;
-    margin-top: 1.5rem;
+    height: 35vh;
+    width: 16vw;
+    margin-top: 2vh;
     background-color: #585858;
     border-radius: 25%;
     display: flex;
@@ -146,7 +149,7 @@ footer{
 }
 
 .category-img-container > img{
-    height: 9.5rem;
+    height: 30vh;
     border-radius: 30%;
 }
 
@@ -162,11 +165,11 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 2rem;
+    padding-top: 2vh;
 }
 
 .products-cards{
-    padding-top: 8rem;
+    padding-top: 10vh;
     display: flex;
 }
 
@@ -176,18 +179,17 @@ footer{
 
 .product-img-container{
     background-color: #000000;
-    width: 12rem;
-    height: 13rem;
+    width: 15vw;
+    height: 32vh;
     border-radius: 25%;
     position: relative;
-    left: 2rem;
+    left: 10%;
 }
 
 .product-img-container > img{
-    width: 10rem;
     height: -webkit-fill-available;
     position: absolute;
-    left: .5rem;
+    left: 10%;
     border-radius: 40%;
 }
 .product-info-container{
@@ -201,7 +203,7 @@ footer{
 }
 
 .product-info-container > *{
-    padding-left: 1rem;
+    padding-left: 1vw;
     font-size: 1.1rem;
 }
 
@@ -211,7 +213,7 @@ footer{
 }
 
 .verDetalle-btn > a{
-    padding: .5rem;
+    padding: 10px;
     text-decoration: none;
     background-color: #000000;
     color: #FFFFFF;
@@ -229,26 +231,26 @@ footer{
     display:flex;
     justify-content: center;
     align-items: center;
-    padding-top: 5rem;
+    padding-top: 2vh;
 }
 
 .detailed-info-container{
     background-color: white;
-    height: 31.2rem;
-    width: 30rem;
-    margin-left: 1.5rem;
+    height: 60vh;
+    width: 40vw;
+    margin-left: 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .detailed-info-container > p{
-    padding-left:1.5rem;
+    padding-left: 3%;
 }
 
 
 .detailed-encargo{
-    padding-top: 7rem;
+    padding-top: 0;
 }
 .talla{
     display: flex;
@@ -256,8 +258,8 @@ footer{
     align-items: center;
 }
 .talla > input{
-    height: 1rem;
-    width: 15rem;
+    height: 2vh;
+    width: auto;
 }
 
 .botones{
@@ -268,9 +270,9 @@ footer{
 
 .botones > div{
     background-color: #D9D9D9;
-    height: 2rem;
-    width: 8rem;
-    padding: .5rem .5rem .2rem .5rem;
+    height: 5vh;
+    width: 10vw;
+    padding: 10px;
     text-align: center;
     border-radius: 50%;
 
@@ -293,31 +295,31 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top:5rem ;
+    padding-top: 1% ;
 }
 
 .title{
     background-color: #343030;
     border-radius: 50%;
-    height: 15rem;
-    width: 16rem;
+    height: 30vh;
+    width: 16vw;
     border: 3px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-.title > p{
+.title > h1{
     margin:0;
     color: white;
     font-size: 2rem;
 }
 
 .aboutUs-info{
-    margin: 1.3rem;
+    margin: 3%;
     background-color: rgb(217,217,217,0.4);
-    height: 20rem;
-    padding: 0 1.2rem;
+    height: 30vh;
+    padding: 0 2%;
 }
 
 .aboutUs-info > p{
