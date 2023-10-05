@@ -5,13 +5,17 @@
     margin: 0;
     padding: 0;
 }
+
+/* HEADER Y SUS ELEMENTOS */
 nav{
     background-color: #2C2A2A;
+    height: 10vh;
+    padding-top: 3vh;
+}
+nav > ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 12vh;
-    
 }
 input{
     width: 30vw;
@@ -32,14 +36,14 @@ input{
 p> a{
     text-decoration: none;
 }
-nav > a , nav > a:visited , nav > a:link{
+li > a , li > a:visited , li > a:link{
     text-decoration: none;
     color: white;
 }
-nav > a:hover{
+li > a:hover{
     color: grey;
 }
-nav > img{
+li > img{
     margin-right: 1.5rem;
 }
 p> a:visited{
@@ -49,57 +53,13 @@ a >span{
     color: darkred;
 }
 
+/* MAIN Y SUS ELEMENTOS */
+
 main{
     margin: 0;
     padding: 0;
     height: 68vh;
 }
-
-footer{
-    background-color: #2C2A2A ;
-    height: 20vh;
-    display: flex;
-    flex-direction: column;
-}
-.footer-top{
-    padding-top: 2vh;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.line{
-    height: 1px;
-    background-color: white;
-    width: 25%;
-}
-.socials{
-    width: 25%;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 2vh;
-}
-.socials > a > i{
-    color: white;
-}
-
-.footer-bottom{
-    text-align: center;
-}
-.footer-bottom > p{
-    margin:0;
-    color: white;
-}
-.footer-bottom > p >span{
-    color: darkred;
-}
-.footer-mastore{
-    font-size: 2rem;
-}
-#copyright{
-    font-family: 'Iceland', cursive;
-
-}
-
 
 /* --------------CATALOGUE--------------*/
 
@@ -210,6 +170,7 @@ footer{
 .verDetalle-btn{
     margin: 0;
     text-align: center;
+    margin-top: 16px;
 }
 
 .verDetalle-btn > a{
@@ -217,6 +178,7 @@ footer{
     text-decoration: none;
     background-color: #000000;
     color: #FFFFFF;
+    
 }
 
 .verDetalle-btn > a:hover{
@@ -234,6 +196,10 @@ footer{
     padding-top: 2vh;
 }
 
+.product-detailed > img{
+    height: 60vh;
+}
+
 .detailed-info-container{
     background-color: white;
     height: 60vh;
@@ -242,6 +208,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .detailed-info-container > p{
@@ -266,6 +233,7 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 20px;
 }
 
 .botones > div{
@@ -325,3 +293,53 @@ footer{
 .aboutUs-info > p{
     font-size: 1.2rem;
 }
+
+
+
+
+footer{
+    background-color: #2C2A2A ;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+}
+.footer-top{
+    padding-top: 2vh;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.line{
+    height: 1px;
+    background-color: white;
+    width: 25%;
+}
+.socials{
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2vh;
+}
+.socials > a > i{
+    color: white;
+}
+
+.footer-bottom{
+    text-align: center;
+}
+.footer-bottom > p{
+    margin:0;
+    color: white;
+}
+.footer-bottom > p >span{
+    color: darkred;
+}
+.footer-mastore{
+    font-size: 2rem;
+}
+#copyright{
+    font-family: 'Iceland', cursive;
+
+}
+
+
