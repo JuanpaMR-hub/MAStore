@@ -12,11 +12,11 @@ nav{
     height: 10vh;
     padding-top: 3vh;
 }
-nav > ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+ul{
+    list-style: none;
 }
+
 input{
     width: 30vw;
 }
@@ -51,6 +51,11 @@ p> a:visited{
 }
 a >span{
     color: darkred;
+}
+
+#hamburguer-btn{
+    background-color: #000000;
+    padding: 0 10px;
 }
 
 /* MAIN Y SUS ELEMENTOS */
