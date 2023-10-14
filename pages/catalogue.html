@@ -10,51 +10,63 @@
 </head>
 <body>
     <header>
-        <nav class="container-fluid">
-            <ul class="row mx-auto">
-                <!-- Desktop -->                
-                <li class="logo-container col-2 d-none d-md-block"><p><a href="../index.html"><span>MA</span> Store</a></p></li>
-                <li class="search-container col-6 d-none d-md-block">
-                    <form action="#">
-                        <input type="text" placeholder="Search.." name="search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                      </form>
-                </li>
-                <li class="col-1 d-none d-md-block" ><a href="./catalogue.html">Productos</a></li>
-                <li class="col-2 d-none d-md-block"><a href="./about_us.html">Sobre nosotros</a></li>
-
-                <!-- Mobile -->
-                <li class="hamburguer-menu d-md-none col-2 "><button id="hamburguer-btn"><i class="fa fa-bars fa-flip" style="color: #ffffff;"></i></button></li>
-                <li class="logo-container col-8 d-md-none w-50"><p><a href="../index.html"><span>MA</span> Store</a></p></li>
-                <li class="btnSearch col-1 d-md-none"><i class="fa fa-search" style="color: #ffffff;"></i> </li>
-
-                <li class="col-1"><img src="../img/carro.png" alt="shopping cart"></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark "  data-bs-theme="dark">
+            <div class="container-fluid">
+            <p class="logo-container bg-white rounded-pill my-2 col-auto mx-auto col-xs-"><a href="../index.html"><span>MA</span> Store</a></p>
+              
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-fill w-100">
+                    <li class="nav-link">
+                        <form class="d-flex px-5" role="search">
+                            <input class="form-control col-lg-12 col-md-12 me-2 w-100" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-secondary" type="button"><i class="fa fa-search"></i></button>
+                          </form>
+                    </li>
+                  <li class="nav-item mx-5">
+                    <a class="nav-link" href="./catalogue.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about_us.html">Sobre nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <span id="boot-icon" class="bi bi-cart" style="font-size: 18px; color: rgb(255, 255, 255);"></span>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
     </header>
     <!-- Variante -->
-    <main style="background-image: url('../img/taek2.jpg'); background-size: cover;">
-        <div class="category-container">
-            <div class="product-category">
-                <div class="category-title"><p>VESTIMENTA</p></div>
-                <a href="./products.html">
-                    <div class="category-img-container"><img src="../img/KARATE_GI_AVANZADO-3-removebg-preview.png" alt="imagen de vestimenta"></div>
-                </a>
-                
-            </div>
-            <div class="product-category">
-                <div class="category-title"><p>ARMAS</p></div>
-                <div class="category-img-container"><img src="../img/nunchucks.png" alt="nunchucks"></div>
-            </div>
-            <div class="product-category">
-                <div class="category-title"><p>IMPLEMENTOS</p></div>
-                <div class="category-img-container"><img src="../img/paleta.png" alt="paleta"></div>
-            </div>
-            <div class="product-category">
-                <div class="category-title"><p>PROTECTORES</p></div>
-                <div class="category-img-container"><img src="../img/protectores.png" alt="protectores"></div>
-            </div>
+    <main>
+        <div class="pageBackground  overflow-y-scroll overflow-x-hidden" id="productsBG">
+            <ul class="category-container row row-cols-sm-1 row-cols-md-3 row-cols-xl-6">
+                <li class="product-category col">
+                    <p class="category-title">VESTIMENTA</p>
+                    <a href="./products.html">
+                        <img class="img-fluid" src="../img/karate-gi.png" alt="imagen de vestimenta">
+                    </a>
+                    
+                </li>
+                <li class="product-category col">
+                    <p class="category-title">ARMAS</p>
+                    <img class="img-fluid"  src="../img/nunchucks.png" alt="nunchucks">
+                </li>
+                <li class="product-category col">
+                    <p class="category-title">IMPLEMENTOS</p>
+                    <img class="img-fluid" src="../img/paleta.png" alt="paleta de entrenamiento">
+                </li>
+                <li class="product-category col">
+                    <p class="category-title">PROTECTORES</p>
+                    <img class="img-fluid" src="../img/protectores.png" alt="protectores">
+                </li>
+            </ul>
         </div>
+        
         
         
     </main>

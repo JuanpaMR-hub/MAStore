@@ -7,38 +7,39 @@
 }
 
 /* HEADER Y SUS ELEMENTOS */
-nav{
-    background-color: #2C2A2A;
-    height: 10vh;
-    padding-top: 3vh;
-}
 
-ul{
-    list-style: none;
-}
-
-input{
-    width: 30vw;
-}
 .logo-container{
     text-align: center;
-    background-color: #D9D9D9;
-    width: 10vw;
-    height: 5vh;
-    border-radius: 1rem;
-    margin-left: 1.5rem;
-
+    width: 15vw;
+    font-size: x-large;
 }
-.logo-container > p{
+
+@media (max-width: 600px ){
+    .logo-container{
+        width: 40vw;
+    }
+}
+
+.logo-container > a{
     margin: 0;
     font-size: 1.5rem;
-}
-p> a{
     text-decoration: none;
 }
+
+.logo-container > a:hover{
+    color: #585858;
+}
+.logo-container > a:visited , .logo-container>a:link{
+    color:black;
+    text-decoration: none;
+}
+
+
 li > a , li > a:visited , li > a:link{
     text-decoration: none;
     color: white;
+    opacity: .7;
+    font-size: large;
 }
 li > a:hover{
     color: grey;
@@ -46,12 +47,14 @@ li > a:hover{
 li > img{
     margin-right: 1.5rem;
 }
-p> a:visited{
+
+a:visited{
     color: black;
 }
 a >span{
     color: darkred;
 }
+
 
 #hamburguer-btn{
     background-color: #000000;
@@ -61,17 +64,48 @@ a >span{
 /* MAIN Y SUS ELEMENTOS */
 
 main{
-    margin: 0;
-    padding: 0;
-    height: 68vh;
+    height: 72.5vh;
+}
+
+.pageBackground{
+    background-size: cover;
+    height: 100%;
+}
+
+#indexBG{
+    background-image: url("../img/blackBelt.jpg");
+    filter: brightness(50%);
+    background-size: cover;
+    height: 100%;
+    
+}
+
+#indexBG > h1{
+    position:absolute;
+    z-index: 1;
+    top: 62vh;
+    right: 10vh;
+    color: black;
+    filter: brightness(100%);
+}
+
+@media (max-width:480px){
+    #indexBG > h1{
+        right: 1vw;
+    }
+}
+
+#productsBG{
+    background-image: url("../img/taek2.jpg");
+    background-size: cover;
 }
 
 /* --------------CATALOGUE--------------*/
 
+
+
+
 .category-container{
-    position: absolute;
-    height: inherit;
-    width: -webkit-fill-available;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,30 +126,12 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.category-title > h1{
-    color: white;
-    font-size: 1.3rem;
-}
-.category-title > p{
     color: white;
 }
 
-.category-img-container{
-    height: 35vh;
-    width: 16vw;
-    margin-top: 2vh;
-    background-color: #585858;
-    border-radius: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.category-img-container > img{
-    height: 30vh;
-    border-radius: 30%;
+.img-fluid{
+    border: rgba(255,255,255,.5) 1px solid;
+    border-radius: 15%;
 }
 
 .product-category:hover >a > .category-img-container > img{
@@ -273,26 +289,19 @@ main{
 
 .title{
     background-color: #343030;
-    border-radius: 50%;
-    height: 30vh;
-    width: 16vw;
     border: 3px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    border-radius: 50%;
 }
 .title > h1{
     margin:0;
+    padding: 24%;
     color: white;
     font-size: 2rem;
 }
 
 .aboutUs-info{
-    margin: 3%;
+    margin: 10% 3%;
     background-color: rgb(217,217,217,0.4);
-    height: 30vh;
-    padding: 0 2%;
 }
 
 .aboutUs-info > p{
@@ -301,6 +310,7 @@ main{
 
 
 
+/* FOOTER */
 
 footer{
     background-color: #2C2A2A ;
