@@ -1,95 +1,507 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>MA Store</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>MA Store</title>
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark "  data-bs-theme="dark">
-            <div class="container-fluid">
-            <p class="logo-container bg-white rounded-pill my-2 col-auto mx-auto col-xs-"><a href="../index.html"><span>MA</span> Store</a></p>
-              
-              
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-fill w-100">
-                    <li class="nav-link">
-                        <form class="d-flex px-5" role="search">
-                            <input class="form-control col-lg-12 col-md-12 me-2 w-100" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-secondary" type="button"><i class="fa fa-search"></i></button>
-                          </form>
-                    </li>
-                  <li class="nav-item mx-5">
-                    <a class="nav-link" href="./catalogue.html">Productos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./about_us.html">Sobre nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <span id="boot-icon" class="bi bi-cart" style="font-size: 18px; color: rgb(255, 255, 255);"></span>
-                  </li>
-                </ul>
-                
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark " data-bs-theme="dark">
+      <div class="container-fluid">
+        <p class="logo-container bg-white rounded-pill my-2 col-auto mx-auto col-xs-"><a
+            href="../index.html"><span>MA</span> Store</a></p>
+
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-fill w-100 header-links">
+            <li class="nav-link">
+              <form class="d-flex px-5" role="search">
+                <input class="form-control col-lg-12 col-md-12 me-2 w-100" type="search" placeholder="Search"
+                  aria-label="Search">
+                <button class="btn btn-outline-secondary" type="button"><i class="fa fa-search"></i></button>
+              </form>
+            </li>
+            <li class="nav-item mx-5">
+              <a class="nav-link" href="./catalogue.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about_us.html">Sobre nosotros</a>
+            </li>
+            <li class="nav-item">
+              <span id="boot-icon" class="bi bi-cart" style="font-size: 18px; color: rgb(255, 255, 255);"></span>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Variante -->
+  <main>
+    <div class="pageBackground overflow-x-hidden" id="productsBG">
+
+      <!-- Categories navar -->
+      <!-- <ul class="nav nav-tabs flex-column flex-sm-row justify-content-center px-4 cat-navbar">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Taekwondo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Karate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Judo</a>
+        </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">KickBoxing</a>
+        </li>
+      </ul> -->
+      <!-- /Categories Navbar  -->
+
+      <aside>
+        <ul class="nav nav-tabs flex-column flex-sm-column justify-content-evenly" style="border: 0;">
+          <li class="nav-item"><a href="#vestimentas" aria-current="page" class="nav-link">Vestimentas</a></li>
+          <li class="nav-item"><a href="#armas" aria-current="page" class="nav-link">Armas</a></li>
+          <li class="nav-item"><a href="#implementos" aria-current="page" class="nav-link">Implementos</a></li>
+          <li class="nav-item"><a href="#protectores" aria-current="page" class="nav-link">Protectores</a></li>
+        </ul>
+      </aside>
+
+
+      <div id="wrapper" data-bs-spy="scroll" data-bs-target="aside">
+        <section id="vestimentas">
+
+          <ul class="category-container row row-cols-sm-1 row-cols-md-3 row-cols-xl-6 ">
+            <li class="product-category col">
+              <div class="card" style="width: 18rem;">
+                <img src="https://http2.mlstatic.com/D_Q_NP_2X_662878-MLC45977683610_052021-T.webp"
+                  class="card-img-top catalogue-card" alt="Judogi J500 adidas">
+                <hr>
+                <div class="card-body">
+                  <p class="card-title">Judogi J500 adidas</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="ratings">
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p class="review-count">12 Reviews</p>
+                  </div>
+                  <p class="card-text">$9.490 </p>
+                  <a href="./products/judogi_adidas.html" class="btn stretched-link hidden"></a>
+                </div>
               </div>
-            </div>
-          </nav>
-    </header>
-    <!-- Variante -->
-    <main>
-        <div class="pageBackground  overflow-y-scroll overflow-x-hidden" id="productsBG">
-            <ul class="category-container row row-cols-sm-1 row-cols-md-3 row-cols-xl-6">
-                <li class="product-category col">
-                    <p class="category-title">VESTIMENTA</p>
-                    <a href="./products.html">
-                        <img class="img-fluid" src="../img/karate-gi.png" alt="imagen de vestimenta">
-                    </a>
-                    
-                </li>
-                <li class="product-category col">
-                    <p class="category-title">ARMAS</p>
-                    <img class="img-fluid"  src="../img/nunchucks.png" alt="nunchucks">
-                </li>
-                <li class="product-category col">
-                    <p class="category-title">IMPLEMENTOS</p>
-                    <img class="img-fluid" src="../img/paleta.png" alt="paleta de entrenamiento">
-                </li>
-                <li class="product-category col">
-                    <p class="category-title">PROTECTORES</p>
-                    <img class="img-fluid" src="../img/protectores.png" alt="protectores">
-                </li>
-            </ul>
-        </div>
-        
-        
-        
-    </main>
-    <footer>
-        <div class="footer-top">
-            <div class="line"></div>
-            <div class="socials">
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-        
-            </div>
-            <div class="line"></div>
-        </div>
-        <div class="footer-bottom">
-            <p class="footer-mastore"><span>MA</span> Store</p>
-            <p id="copyright">Copyright @2023 | Martial Arts Store</p>
-        </div>
-        
+            </li>
+            <li class="product-category col">
+              <div class="card" style="width: 18rem;">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_686047-MLC53341606230_012023-V.webp"
+                  class="card-img-top catalogue-card" alt="Traje Dobok De Taekwondo Para Niño Resistente Y Cómodo">
+                <hr>
+                <div class="card-body">
+
+                  <p class="card-title">Traje Dobok De Taekwondo Para Niño Resistente Y Cómodo</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="ratings">
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p class="review-count">12 Reviews</p>
+                  </div>
+                  <p class="card-text">$9.490 </p>
+                  <a href="#" class="btn stretched-link hidden"></a>
+                </div>
+              </div>
+            </li>
+            <li class="product-category col">
+              <div class="card" style="width: 18rem;">
+                <img src="https://http2.mlstatic.com/D_Q_NP_2X_705056-MLC49475027742_032022-T.webp"
+                  class="card-img-top catalogue-card" alt="Judogi J500 Azul adidas">
+                <hr>
+                <div class="card-body">
+
+                  <p class="card-title">Judogi J500 Azul adidas</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="ratings">
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p class="review-count">12 Reviews</p>
+                  </div>
+                  <p class="card-text">$9.490 </p>
+                  <a href="#" class="btn stretched-link hidden"></a>
+                </div>
+              </div>
+            </li>
+            <li class="product-category col">
+              <div class="card" style="width: 18rem;">
+                <img src="https://http2.mlstatic.com/D_Q_NP_2X_742409-MLC51541310489_092022-T.webp"
+                  class="card-img-top catalogue-card" alt="Kimono De Jiu Jitsu Response 2.0 Bjj adidas">
+                <hr>
+                <div class="card-body">
+
+                  <p class="card-title">Kimono De Jiu Jitsu Response 2.0 Bjj adidas</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="ratings">
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p class="review-count">12 Reviews</p>
+                  </div>
+                  <p class="card-text">$9.490 </p>
+                  <a href="#" class="btn stretched-link hidden"></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <hr>
+        </section>
+
+        <section id="armas">
+          <ul class="category-container row row-cols-sm-1 row-cols-md-3 row-cols-xl-6">
+            <li class="product-category col">
+              <div class="card" style="width: 18rem;">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_642495-MLC45815964035_052021-V.webp"
+                  class="card-img-top catalogue-card" alt="Bastón Tonfa Luma Policial Tonfa Defensa Personal">
+                <hr>
+                <div class="card-body">
+
+                  <p class="card-title">Bastón Tonfa Luma Policial Tonfa Defensa Personal</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="ratings">
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p class="review-count">12 Reviews</p>
+                  </div>
+                  <p class="card-text">$9.490 </p>
+                  <a href="#" class="btn stretched-link hidden"></a>
+                </div>
+              </div>
+            </li>
+            <li class="product-category col">
+              <div class="card" style="width: 18rem;">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_795447-MLC51937085228_102022-O.webp"
+                  class="card-img-top catalogue-card" alt=" Espada Juguete Katana Samurai De Madera">
+                <hr>
+                <div class="card-body">
+
+                  <p class="card-title"> Espada Juguete Katana Samurai De Madera</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="ratings">
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p class="review-count">12 Reviews</p>
+                  </div>
+                  <p class="card-text">$9.490 </p>
+                  <a href="#" class="btn stretched-link hidden"></a>
+                </div>
+              </div>
+            </li>
+            <li class="product-category col">
+              <div class="card" style="width: 18rem;">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_985544-MLC68908144624_042023-O.webp"
+                  class="card-img-top catalogue-card" alt="Tonwka / Tonfa">
+                <hr>
+                <div class="card-body">
+
+                  <p class="card-text">Tonwka / Tonfa</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="ratings">
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p class="review-count">12 Reviews</p>
+                  </div>
+                  <p class="card-text">$9.490 </p>
+                  <a href="#" class="btn stretched-link hidden"></a>
+                </div>
+              </div>
+            </li>
+            <li class="product-category col">
+              <div class="card" style="width: 18rem;">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_893473-MLC72161045426_102023-V.webp"
+                  class="card-img-top catalogue-card" alt="Nunchaku Metalico Baston Defensa Personal Artes Marciales">
+                <hr>
+                <div class="card-body">
+
+                  <p class="card-text">Nunchaku Metalico Baston Defensa Personal Artes Marciales</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="ratings">
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p class="review-count">12 Reviews</p>
+                  </div>
+                  <p class="card-text">$9.490 </p>
+                  <a href="#" class="btn stretched-link hidden"></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <hr>
+        </section>
+
+
+        <section id="implementos">
+          <ul class="category-container row row-cols-sm-1 row-cols-md-3 row-cols-xl-6">
+            <li class="product-category col">
+              <div class="card" style="width: 18rem;">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_779267-CBT45340409606_032021-V.webp"
+                  class="card-img-top catalogue-card" alt="Saco De Boxeo Kick Squares Traini, 1 Unidad">
+                <hr>
+                <div class="card-body">
+
+                  <p class="card-text">Saco De Boxeo Kick Squares Traini, 1 Unidad</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="ratings">
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p class="review-count">12 Reviews</p>
+                  </div>
+                  <p class="card-text">$9.490 </p>
+                  <a href="#" class="btn stretched-link hidden"></a>
+                </div>
+              </div>
+            </li>
+            <li class="product-category col">
+              <div class="card" style="width: 18rem;">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_667484-CBT71788757356_092023-V.webp"
+                  class="card-img-top catalogue-card" alt="Karate Board Para Niños Adultos Karate Training Kick Board">
+                <a href="#" class="btn stretched-link"></a>
+                <hr>
+                <div class="card-body">
+
+                  <p class="card-text">Karate Board Para Niños Adultos</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="ratings">
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p class="review-count">12 Reviews</p>
+                  </div>
+                  <p class="card-text">$9.490 </p>
+                  <a href="#" class="btn stretched-link hidden"></a>
+                </div>
+              </div>
+            </li>
+            <li class="product-category col">
+              <div class="card" style="width: 18rem;">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_998187-MLC52916098905_122022-V.webp"
+                  class="card-img-top catalogue-card" alt="Thai Pad, Kickboxing Kick Pad, Kick Training Strike Shi...">
+                <hr>
+                <div class="card-body">
+
+                  <p class="card-text">Thai Pad, Kickboxing Kick Pad</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="ratings">
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p class="review-count">12 Reviews</p>
+                  </div>
+                  <p class="card-text">$9.490 </p>
+                  <a href="#" class="btn stretched-link hidden"></a>
+                </div>
+              </div>
+            </li>
+            <li class="product-category col">
+              <div class="card" style="width: 18rem;">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_841169-CBT72286914847_102023-V.webp"
+                  class="card-img-top catalogue-card"
+                  alt="Target Pad, Boxeo Taekwondo Karate Kick Punching Training Ta">
+                <hr>
+                <div class="card-body">
+
+                  <p class="card-text">Target Pad, Boxeo Taekwondo Karate Kick Punching Training Ta</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="ratings">
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p class="review-count">12 Reviews</p>
+                  </div>
+                  <p class="card-text">$9.490 </p>
+                  <a href="#" class="btn stretched-link hidden"></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <hr>
+        </section>
+
+
+        <section id="protectores">
+          <ul class="category-container row row-cols-sm-1 row-cols-md-3 row-cols-xl-6">
+            <li class="product-category col">
+              <div class="card" style="width: 18rem;">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_836819-MLC71458549108_092023-V.webp"
+                  class="card-img-top catalogue-card" alt="Cabezal Casco Protector Pomulos Menton Boxeo Mma Muuk">
+                <hr>
+                <div class="card-body">
+
+                  <p class="card-text">Cabezal Casco Protector Pomulos Menton Boxeo Mma Muuk</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="ratings">
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p class="review-count">12 Reviews</p>
+                  </div>
+                  <p class="card-text">$9.490 </p>
+                  <a href="#" class="btn stretched-link hidden"></a>
+                </div>
+              </div>
+            </li>
+            <li class="product-category col">
+              <div class="card" style="width: 18rem;">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_645879-MLC71685415764_092023-V.webp"
+                  class="card-img-top catalogue-card" alt="Espinilleras Protectoras Acolchadas Para Mma Y Kickboxing">
+                <hr>
+                <div class="card-body">
+
+                  <p class="card-text">Espinilleras Protectoras Acolchadas Para Mma Y Kickboxing</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="ratings">
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p class="review-count">12 Reviews</p>
+                  </div>
+                  <p class="card-text">$9.490 </p>
+                  <a href="#" class="btn stretched-link hidden"></a>
+                </div>
+              </div>
+            </li>
+            <li class="product-category col">
+              <div class="card" style="width: 18rem;">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_805565-MLC70721223303_072023-V.webp"
+                  class="card-img-top catalogue-card" alt="X2 Protector Bucal Deportivo Boxeo Karate Protector Bucal">
+                <hr>
+                <div class="card-body">
+
+                  <p class="card-text">X2 Protector Bucal Deportivo Boxeo Karate Protector Bucal</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="ratings">
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p class="review-count">12 Reviews</p>
+                  </div>
+                  <p class="card-text">$9.490 </p>
+                  <a href="#" class="btn stretched-link hidden"></a>
+                </div>
+              </div>
+            </li>
+            <li class="product-category col">
+              <div class="card" style="width: 18rem;">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_924754-MLC44699883108_012021-V.webp"
+                  class="card-img-top catalogue-card" alt="Cabezal Protector Taekwondo adidas W.t">
+                <hr>
+                <div class="card-body">
+
+                  <p class="card-text">Cabezal Protector Taekwondo adidas W.t</p>
+                  <div class="d-flex justify-content-between">
+                    <div class="ratings">
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p class="review-count">12 Reviews</p>
+                  </div>
+                  <p class="card-text">$9.490 </p>
+                  <a href="#" class="btn stretched-link hidden"></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <hr>
+        </section>
+      </div>
+
+    </div>
+  </main>
+  <footer>
+    <div class="footer-top">
+      <div class="line"></div>
+      <div class="socials">
+        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+
+      </div>
+      <div class="line"></div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-mastore"><span>MA</span> Store</p>
+      <p id="copyright">Copyright @2023 | Martial Arts Store</p>
+    </div>
 
 
 
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Iceland&family=Kenia&display=swap');
 
 *{
-    font-family: 'Kenia', cursive;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
-
 /* HEADER Y SUS ELEMENTOS */
 
+header *{
+    font-family: 'Kenia', cursive;
+}
 .logo-container{
     text-align: center;
     width: 15vw;
@@ -33,27 +35,28 @@
     color:black;
     text-decoration: none;
 }
+.logo-container>a:visited{
+    color: black;
+}
+.logo-container>a >span{
+    color: darkred;
+}
 
 
-li > a , li > a:visited , li > a:link{
+.header-links > li > a , .header-links > li > a:visited , .header-links > li > a:link{
     text-decoration: none;
     color: white;
     opacity: .7;
     font-size: large;
 }
-li > a:hover{
+.header-links > li > a:hover{
     color: grey;
 }
-li > img{
+.header-links > li > img{
     margin-right: 1.5rem;
 }
 
-a:visited{
-    color: black;
-}
-a >span{
-    color: darkred;
-}
+
 
 
 #hamburguer-btn{
@@ -63,28 +66,26 @@ a >span{
 
 /* MAIN Y SUS ELEMENTOS */
 
-main{
-    height: 72.5vh;
-}
-
 .pageBackground{
     background-size: cover;
-    height: 100%;
+    position: relative;
+    height: auto;
+    width: 100%;
 }
 
 #indexBG{
     background-image: url("../img/blackBelt.jpg");
     filter: brightness(50%);
     background-size: cover;
-    height: 100%;
+    height: 100vh;
     
 }
 
 #indexBG > h1{
     position:absolute;
     z-index: 1;
-    top: 62vh;
-    right: 10vh;
+    top: 12vh;
+    left: 10vh;
     color: black;
     filter: brightness(100%);
 }
@@ -96,14 +97,49 @@ main{
 }
 
 #productsBG{
-    background-image: url("../img/taek2.jpg");
+    /* background-image: url("../img/taek2.jpg"); */
+    background-color: #1d1d1d;
     background-size: cover;
 }
 
 /* --------------CATALOGUE--------------*/
 
 
+.cat-navbar>li>a , .cat-navbar>li>a:visited {
+    color: #FFFFFF;
+}
 
+aside{
+    position: fixed;
+    left: 0;
+    height: 50vh;
+}
+
+aside>ul{
+    height: 36vh;
+}
+
+aside>ul>li>a ,aside>ul>li>a:visited {
+    color:#FFFFFF;
+}
+
+aside>ul>li>.nav-link:hover{
+    color: gray;
+    text-decoration: none;
+}
+
+
+section>hr{
+    border: white 1px solid;
+    width: 50%;
+    margin: auto;
+}
+
+
+
+.card{
+    height: 50vh;
+}
 
 .category-container{
     display: flex;
@@ -137,6 +173,23 @@ main{
 .product-category:hover >a > .category-img-container > img{
     transform: scale(1.2);
     transition: all .2s .2s;
+}
+
+.catalogue-card{
+    height: 60%;
+
+}
+.ratings{
+    margin-right:10px;
+}
+
+.ratings i{
+    
+    color:#cecece;
+}
+
+.rating-color{
+    color:#fbc634 !important;
 }
 
 
@@ -279,24 +332,18 @@ main{
 
 /* --------------ABOUT US--------------*/
 
+
+.about-us-img{
+    height: 50vh;
+    filter: brightness(0.5);
+}
+
 .aboutUs-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     padding-top: 1% ;
-}
-
-.title{
-    background-color: #343030;
-    border: 3px solid white;
-    border-radius: 50%;
-}
-.title > h1{
-    margin:0;
-    padding: 24%;
-    color: white;
-    font-size: 2rem;
 }
 
 .aboutUs-info{
@@ -315,6 +362,7 @@ main{
 footer{
     background-color: #2C2A2A ;
     height: 20vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
