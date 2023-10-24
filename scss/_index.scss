@@ -1,0 +1,18 @@
+#indexBG{
+    height: 100vh;
+    img{
+        height: inherit;
+        width: inherit;
+    }
+    h1{
+        position: absolute;
+        top: 8vh;
+        left: 0;
+        right: 0;
+        width: 40rem;
+        margin-left: auto;
+        margin-right: auto;
+        color: black;
+        font-family: $title-fonts
+    }
+}

@@ -1,0 +1,34 @@
+.aboutUs-container{
+    align-items: center;
+    height: 73vh;
+
+    background-image: url("../img/taek2.jpg");
+    background-size: cover;
+
+    padding-top: 15px;
+   
+    img{
+        border-radius: 0 10% 10% 0;
+        height: 70%;
+        width: 70%;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        backdrop-filter: blur(10px);
+        margin-left: 30px;
+
+        h1{
+            color: $auburn;
+            font-family: $title-fonts;
+        }
+        p{
+            color: white;
+        }
+
+        
+    }
+}
+
