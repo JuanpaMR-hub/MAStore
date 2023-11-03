@@ -1,6 +1,7 @@
 .aboutUs-container{
     align-items: center;
-    height: 73vh;
+    justify-content: space-evenly;
+    height: 100%;
 
     background-image: url("../img/taek2.jpg");
     background-size: cover;
@@ -9,8 +10,10 @@
    
     img{
         border-radius: 0 10% 10% 0;
-        height: 70%;
-        width: 70%;
+        max-height: 90%;
+        max-width: 90%;
+        padding: 0 30px;
+
     }
 
     .info{

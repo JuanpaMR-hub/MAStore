@@ -6,6 +6,12 @@
     font-size: large;
 };
 
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
 header {
     font-family: 'Kenia', cursive;
 
@@ -31,9 +37,7 @@ header {
             color: darkred;
         }
 
-        @media (max-width:600px){
-            width: 40vw;
-        }
+        
     }
 
     li{
@@ -50,10 +54,13 @@ header {
     }
 }
 
+main{
+    height: inherit;
+}
+
 .pageBackground{
     background-size: cover;
-    position: relative;
-    height: auto;
+    height: 100%;
     width: 100%;
 }
 

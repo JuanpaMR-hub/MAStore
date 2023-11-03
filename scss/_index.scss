@@ -1,17 +1,8 @@
 #indexBG{
-    height: 100vh;
-    img{
-        height: inherit;
-        width: inherit;
-    }
+    background-image: url(../img/blackBelt.jpg);
+    background-size: cover;
     h1{
-        position: absolute;
-        top: 8vh;
-        left: 0;
-        right: 0;
-        width: 40rem;
-        margin-left: auto;
-        margin-right: auto;
+        text-align: center;
         color: black;
         font-family: $title-fonts
     }
